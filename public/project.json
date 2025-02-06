@@ -1,0 +1,32 @@
+[
+    {  "id": 1,
+      "projectName": "Gaming Website",
+      "title": "Explore, Share & Build the Ultimate Gaming Community.",
+      "githubRepoLink": "https://github.com/Saidur289/Gaming-Website",
+      "websiteLiveLink": ": https://chill-gamer-project-14385.web.app/",
+      "projectImage": "https://i.ibb.co.com/6JvkPrJN/Screenshot-2025-02-05-165653.png",
+      "description": "Enjoy a seamless gaming experience on any device. Add your games and expand the collection.Share insights and discover top-rated games.",
+      "tech":"React, Express.Js,  MongoDB"
+
+
+    },
+    {  "id": 2,
+      "projectName": "Car Rental Project",
+      "title": "Secure, Responsive & Role-Based Platform",
+      "githubRepoLink": "https://github.com/Saidur289/Car-Rental-project",
+      "websiteLiveLink": "https://chill-gamer-project-14385.web.app/",
+      "projectImage": "https://i.ibb.co.com/d12G0BH/Screenshot-2025-02-05-165228.png",
+      "description":"Enjoy a seamless experience on any device with an intuitive interface. Easily book cars with a safe and reliable reservation system. Share experiences and read reviews to make informed decisions.",
+      "tech":"Javascript, React, MongoDB, Firebase"
+    },
+    {  "id": 3,
+      "projectName": "Donation Project",
+      "title": "A platform designed to manage and track donations for various causes.",
+      "githubRepoLink": "https://github.com/Saidur289/My-Fifth-Assingnment",
+      "websiteLiveLink": "https://saidur289.github.io/My-Fifth-Assingnment/",
+      "projectImage": "https://i.ibb.co.com/0rKzSQc/Screenshot-2025-01-04-215832.png",
+      "description":"In this project, I implemented various functionalities using HTML, CSS, Tailwind CSS, and JavaScript. The website primarily focuses on design. While it provides a solid foundation, there are areas that can be improved, such as adding more dynamic features and enhancing user interactivity. Feel free to explore my website to see its potential and current features.",
+      "tech":"Javascript, React, Tailwind CSS"
+    }
+  ]
+  
