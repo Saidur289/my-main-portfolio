@@ -1,7 +1,37 @@
 import { FaEnvelope, FaMapMarkedAlt, FaPhone } from "react-icons/fa";
-
+import { useRef } from "react";
+import Swal from "sweetalert2";
 
 const Contact = () => {
+    const form = useRef();
+    const sendEmail = (e) => {
+        e.preventDefault(); // Prevents page reload on form submission
+    
+        emailjs
+          .sendForm(
+            'service_3zj9tzk', // Replace with your EmailJS service ID
+            'template_t1b4kvz', // Replace with your EmailJS template ID
+            form.current, // Form reference
+            'DQ7UJsdXXxQ7kkqxn' // Replace with your EmailJS public key
+          )
+          .then(
+            (result) => {
+            //   console.log('Send Message Successfully!', result.text); // Log success message
+              Swal.fire({
+                position: "top-end",
+                icon: "success",
+                title: "Send Message Successfully",
+                showConfirmButton: false,
+                timer: 1500
+              });
+              form.current.reset();
+              
+            },
+            (error) => {
+              console.log('FAILED...', error.text); // Log error message
+            }
+          );
+      };
     return (
        <div className='bg-black text-white py-20'>
              <div className='container mx-auto px-8 md:px-16 lg:24'>
@@ -29,18 +59,18 @@ const Contact = () => {
                
                </div>
                <div className="flex-1 w-full">
-                <form className="space-y-4">
+                <form ref={form} onSubmit={sendEmail} className="space-y-4">
                     <div>
                         <label htmlFor="name" className="block mb-2">Your Name</label>
-                        <input type="text" placeholder="Your Name" className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400" />
+                        <input type="text" name="user_name" placeholder="Your Name" className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400" />
                     </div>
                     <div>
-                        <label htmlFor="email" className="block mb-2">Email</label>
+                        <label htmlFor="email" name="user_email" className="block mb-2">Email</label>
                         <input placeholder="Your Email" type="email" className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400" />
                     </div>
                     <div>
-                        <label htmlFor="email" className="block mb-2">Message</label>
-                        <textarea rows={'5'}  placeholder="Enter Your Message" type="email" className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400" />
+                        <label htmlFor="message" className="block mb-2">Message</label>
+                        <textarea rows={'5'} name="message"  placeholder="Enter Your Message" type="email" className="w-full p-2 rounded bg-gray-800 border border-gray-600 focus:outline-none focus:border-green-400" />
                     </div>
                     <button className='bg-gradient-to-r from-green-400 to-blue-500 text-white hidden md:inline transform transition-transform duration-300 px-4 py-2 rounded-full'>Send</button>
                 </form>
