@@ -1,0 +1,33 @@
+[
+    {
+      "name": "HTML",
+      "description": "HTML  is the standard language used to create the structure of web pages.",
+      "icon": "https://cdn-icons-png.flaticon.com/512/732/732212.png"
+    },
+    {
+      "name": "CSS",
+      "description": "CSS  is used to style and design HTML elements, allowing you to control layout, colors, fonts, and responsiveness of a web page.",
+      "icon": "https://cdn-icons-png.flaticon.com/512/732/732190.png"
+    },
+    {
+      "name": "JavaScript",
+      "description": "JavaScript is a versatile programming language that enables dynamic behavior on web pages.",
+      "icon": "https://cdn-icons-png.flaticon.com/512/5968/5968292.png"
+    },
+    {
+      "name": "React",
+      "description": "React allows developers to create reusable components and manage state efficiently.",
+      "icon": "https://cdn-icons-png.flaticon.com/512/919/919851.png"
+    },
+    {
+        "name": "React Router",
+        "description": "A library for routing in React applications, enabling navigation between different views.",
+        "icon": "https://cdn-icons-png.flaticon.com/512/481/481130.png"
+      },
+      {
+        "name": "Tailwind CSS",
+        "description": "A utility-first CSS framework often used with React for styling components.",
+        "icon": "https://cdn-icons-png.flaticon.com/512/732/732258.png"
+      }
+     
+]

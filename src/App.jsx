@@ -7,19 +7,21 @@ import Hero from './components/Hero'
 import Navbar from './components/Navbar'
 import Project from './components/Project'
 import Services from './components/Services'
+import Skill from './components/Skill'
 
 function App() {
 
 
   return (
    <div>
-    <Navbar></Navbar>
+    {/* <Navbar></Navbar> */}
     <Hero></Hero>
     <About></About>
+    <Skill></Skill>
     <Services></Services>
     <Project></Project>
     <Contact></Contact>
-    <Footer></Footer>
+    {/* <Footer></Footer> */}
    </div>
   )
 }

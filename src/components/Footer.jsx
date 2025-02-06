@@ -1,5 +1,5 @@
-import { FaFacebook } from "react-icons/fa";
-import { FaGithub, FaLinode } from "react-icons/fa6";
+import { FaFacebook, FaLinkedin } from "react-icons/fa";
+import { FaGithub} from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -14,7 +14,7 @@ const Footer = () => {
             </p>
           </div>
           <div className="flex-1 w-full">
-            <form>
+            <form className="flex">
               <input
                 type="email"
                 placeholder="Enter Email"
@@ -27,16 +27,16 @@ const Footer = () => {
           </div>
         </div>
         <div className="border-t border-gray-600 pt-4 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-gray-400">$copy;{new Date().getFullYear()}</p>
+          <p className="text-gray-400">$copy;{new Date().getFullYear()} Saidur All Right Reserved.</p>
           <div className="flex space-x-4 my-4 md:my-8">
-            <a href="" className="text-gray-400 hover:text-white">
-              <FaFacebook />
+            <a href="https://www.google.com/search?q=fb&oq=fb&gs_lcrp=EgZjaHJvbWUqDggAEEUYJxg7GIAEGIoFMg4IABBFGCcYOxiABBiKBTISCAEQLhhDGM" className="text-gray-400 hover:text-white" target="_blank"  >
+              <FaFacebook></FaFacebook>
             </a>
-            <a href="" className="text-gray-400 hover:text-white">
-              <FaGithub />
+            <a target="_blank" href="https://github.com/Saidur289" className="text-gray-400 hover:text-white">
+              <FaGithub></FaGithub>
             </a>
-            <a href="" className="text-gray-400 hover:text-white">
-              <FaLinode />
+            <a target="_blank" href="https://www.linkedin.com/in/saidur-riaz1/"  className="text-gray-400 hover:text-white">
+              <FaLinkedin></FaLinkedin>
             </a>
           </div>
           <div className="flex space-x-4">
